@@ -1,0 +1,26 @@
+{
+  "name": "gameanalytics",
+  "description": "GameAnalytics plugin",
+  "version": "0.1.0",
+  "license": "MIT",
+  "url": "https://github.com/DrMoriarty/godot-gameanalytics.git",
+  "dependencies": [
+  ],
+  "files": {
+    "scripts": "scripts"
+  },
+  "platform_ios": {
+    "files": {
+      "ios-framework/build/gameanalytics.gdnlib": "addons/gameanalytics-ios/",
+      "ios-framework/build/gameanalytics.gdns": "addons/gameanalytics-ios/",
+      "ios-framework/build/.gitignore": "addons/gameanalytics-ios/",
+      "ios-framework/build/GodotGameAnalytics.xcframework": "addons/gameanalytics-ios/GodotGameAnalytics.xcframework"
+    }
+  },
+  "platform_android": {
+    "files": {
+      "GA-SDK-GODOT/android_godot_3_2/downloads/GameAnalytics.gdap": "android/plugins/",
+      "GA-SDK-GODOT/android_godot_3_2/downloads/GameAnalytics.release.aar": "android/plugins/"
+    }
+  }
+}

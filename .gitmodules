@@ -1,0 +1,3 @@
+[submodule "GA-SDK-GODOT"]
+	path = GA-SDK-GODOT
+	url = git@github.com:GameAnalytics/GA-SDK-GODOT.git
