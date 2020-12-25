@@ -9,6 +9,37 @@
   "files": {
     "scripts": "scripts"
   },
+  "autoload": {
+    "gameanalytics": "*res://scripts/gameanalytics.gd"
+  },
+  "variables": {
+    "GameAnalytics/GAME_KEY": {
+      "info": "Game key"
+    },
+    "GameAnalytics/SECRET_KEY": {
+      "info": "Secret key"
+    },
+    "GameAnalytics/CustomDimensions01": {
+      "info": "Available custom dimensions 01",
+      "default": "ninja,samurai"
+    },
+    "GameAnalytics/CustomDimensions02": {
+      "info": "Available custom dimensions 02",
+      "default": "whale,dolphin"
+    },
+    "GameAnalytics/CustomDimensions03": {
+      "info": "Available custom dimensions 03",
+      "default": "horde,alliance"
+    },
+    "GameAnalytics/ResourceCurrencies": {
+      "info": "Available resource currencies",
+      "default": "gold,gems"
+    },
+    "GameAnalytics/ResourceItemTypes": {
+      "info": "Available resource item types",
+      "default": "boost,lives"
+    }
+  },
   "platform_ios": {
     "files": {
       "ios-framework/build/gameanalytics.gdnlib": "addons/gameanalytics-ios/",
