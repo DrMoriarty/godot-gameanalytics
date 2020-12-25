@@ -19,27 +19,27 @@ func init(game_key: String, secret_key: String, production: bool) -> void:
         _ga.setEnabledInfoLog(not production)
         _ga.setEnabledVerboseLog(not production)
 
-        if ProjectSettings.has_settings('GameAnalytics/CustomDimensions01'):
+        if ProjectSettings.has_setting('GameAnalytics/CustomDimensions01'):
             var d = ProjectSettings.get_setting('GameAnalytics/CustomDimensions01')
             if d != null and d != '':
                 var dims = d.split(',')
                 _ga.configureAvailableCustomDimensions01(dims)
-        if ProjectSettings.has_settings('GameAnalytics/CustomDimensions02'):
+        if ProjectSettings.has_setting('GameAnalytics/CustomDimensions02'):
             var d = ProjectSettings.get_setting('GameAnalytics/CustomDimensions02')
             if d != null and d != '':
                 var dims = d.split(',')
                 _ga.configureAvailableCustomDimensions02(dims)
-        if ProjectSettings.has_settings('GameAnalytics/CustomDimensions03'):
+        if ProjectSettings.has_setting('GameAnalytics/CustomDimensions03'):
             var d = ProjectSettings.get_setting('GameAnalytics/CustomDimensions03')
             if d != null and d != '':
                 var dims = d.split(',')
                 _ga.configureAvailableCustomDimensions03(dims)
-        if ProjectSettings.has_settings('GameAnalytics/ResourceCurrencies'):
+        if ProjectSettings.has_setting('GameAnalytics/ResourceCurrencies'):
             var c = ProjectSettings.get_setting('GameAnalytics/ResourceCurrencies')
             if c != null and c != '':
                 var curs = c.split(',')
                 _ga.configureAvailableResourceCurrencies(curs)
-        if ProjectSettings.has_settings('GameAnalytics/ResourceItemTypes'):
+        if ProjectSettings.has_setting('GameAnalytics/ResourceItemTypes'):
             var t = ProjectSettings.get_setting('GameAnalytics/ResourceItemTypes')
             if t != null and t != '':
                 var types = t.split(',')

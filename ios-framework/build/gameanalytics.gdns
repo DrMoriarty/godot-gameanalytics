@@ -1,8 +1,8 @@
 [gd_resource type="NativeScript" load_steps=2 format=2]
 
-[ext_resource path="res://addons/flurry-ios/flurry.gdnlib" type="GDNativeLibrary" id=1]
+[ext_resource path="res://addons/gameanalytics-ios/gameanalytics.gdnlib" type="GDNativeLibrary" id=1]
 
 [resource]
-class_name = "Flurry"
+class_name = "GameAnalytics"
 library = ExtResource( 1 )
-script_class_name = "Flurry"
+script_class_name = "GameAnalytics"

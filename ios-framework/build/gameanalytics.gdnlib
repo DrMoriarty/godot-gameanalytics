@@ -2,13 +2,13 @@
 
 singleton=true
 load_once=true
-symbol_prefix="flurry_"
+symbol_prefix="gameanalytics_"
 reloadable=false
 
 [entry]
 
-iOS.armv7="res://addons/flurry-ios/flurry.xcframework"
-iOS.arm64="res://addons/flurry-ios/flurry.xcframework"
+iOS.armv7="res://addons/gameanalytics-ios/GodotGameAnalytics.xcframework"
+iOS.arm64="res://addons/gameanalytics-ios/GodotGameAnalytics.xcframework"
 
 [dependencies]
 
