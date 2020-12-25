@@ -7,7 +7,7 @@ func _ready():
         _ga = Engine.get_singleton("GameAnalytics")
     elif OS.get_name() == 'iOS':
         _ga = preload("res://addons/gameanalytics-ios/gameanalytics.gdns").new()
-    if ProjectSettings.has_setting('GameAnalytics/GAME_KEY') and ProjectSettings.has_settings('GameAnalytics/SECRET_KEY'):
+    if ProjectSettings.has_setting('GameAnalytics/GAME_KEY') and ProjectSettings.has_setting('GameAnalytics/SECRET_KEY'):
         var gk = ProjectSettings.get_setting('GameAnalytics/GAME_KEY')
         var sk = ProjectSettings.get_setting('GameAnalytics/SECRET_KEY')
         init(gk, sk, not OS.is_debug_build())
