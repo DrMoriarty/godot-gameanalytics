@@ -16,6 +16,7 @@ void GameAnalyticsCpp::configureAvailableCustomDimensions01(const PoolStringArra
         [tmpary addObject: [NSString stringWithUTF8String: entry.utf8().get_data()]];
     }
     NSArray *list_array = tmpary;
+    NSLog(@"Custom dimensions 01: %@", list_array);
     [GameAnalytics configureAvailableCustomDimensions01:list_array];
 }
 
@@ -27,6 +28,7 @@ void GameAnalyticsCpp::configureAvailableCustomDimensions02(const PoolStringArra
         [tmpary addObject: [NSString stringWithUTF8String: entry.utf8().get_data()]];
     }
     NSArray *list_array = tmpary;
+    NSLog(@"Custom dimensions 02: %@", list_array);
     [GameAnalytics configureAvailableCustomDimensions02:list_array];
 }
 
@@ -38,6 +40,7 @@ void GameAnalyticsCpp::configureAvailableCustomDimensions03(const PoolStringArra
         [tmpary addObject: [NSString stringWithUTF8String: entry.utf8().get_data()]];
     }
     NSArray *list_array = tmpary;
+    NSLog(@"Custom dimensions 03: %@", list_array);
     [GameAnalytics configureAvailableCustomDimensions03:list_array];
 }
 

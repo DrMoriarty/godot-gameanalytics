@@ -81,6 +81,8 @@ void GameAnalytics::configureGameEngineVersion(const String &version)
 
 void GameAnalytics::init(const String &gameKey, const String &secretKey)
 {
+    NSLog(@"Game key: %s", gameKey.utf8().get_data());
+    NSLog(@"Secret key: %s", secretKey.utf8().get_data());
     Dictionary versionInfo = Engine::get_singleton()->get_version_info();
     String major = versionInfo["major"];
     String minor = versionInfo["minor"];
