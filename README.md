@@ -1,6 +1,6 @@
 # GameAnalytics
 
-GameAnalytics SDK wrapper for NativeLib.
+GameAnalytics SDK wrapper for NativeLib. Supported platforms: iOS, Android.
 
 ## Installation
 
