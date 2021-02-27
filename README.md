@@ -4,7 +4,7 @@ GameAnalytics SDK wrapper for NativeLib.
 
 ## Installation
 
-Add (NativeLib-UI Addon)[https://godotengine.org/asset-library/asset/824] into your project. Then find `GameAnalytics` in the list of available plugins and press `Install` button.
+Add [NativeLib-UI Addon](https://godotengine.org/asset-library/asset/824) into your project. Then find `GameAnalytics` in the list of available plugins and press `Install` button.
 
 Don't forget to enable your platforms (iOS/Android) before plugin installation.
 
