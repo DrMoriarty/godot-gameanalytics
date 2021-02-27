@@ -1,11 +1,17 @@
 {
   "name": "gameanalytics",
-  "description": "GameAnalytics plugin",
-  "version": "0.1.0",
+  "display_name": "GameAnalytics",
+  "description": "GameAnalytics: analytics, ads and revenue tracking, A/B testing.",
+  "version": "1.2.7",
+  "godot_version": "3.2.4",
   "license": "MIT",
+  "category": "misc",
   "url": "https://github.com/DrMoriarty/godot-gameanalytics.git",
-  "dependencies": [
-  ],
+  "author": {
+    "name": "DrMoriarty",
+    "url": "https://github.com/DrMoriarty",
+    "donate": "https://ko-fi.com/drmoriarty"
+  },
   "files": {
     "scripts": "scripts"
   },
@@ -42,10 +48,10 @@
   },
   "platform_ios": {
     "files": {
-      "ios-framework/build/gameanalytics.gdnlib": "addons/gameanalytics-ios/",
-      "ios-framework/build/gameanalytics.gdns": "addons/gameanalytics-ios/",
-      "ios-framework/build/.gitignore": "addons/gameanalytics-ios/",
-      "ios-framework/build/GodotGameAnalytics.xcframework": "addons/gameanalytics-ios/GodotGameAnalytics.xcframework"
+      "gameanalytics.gdip": "ios/plugins/gameanalytics/",
+      "bin/release/gameanalytics.debug.a": "ios/plugins/gameanalytics/",
+      "bin/release/gameanalytics.release.a": "ios/plugins/gameanalytics/",
+      "GA-SDK-GODOT/gameanalytics/ios/lib/GameAnalytics.framework/": "ios/plugins/gameanalytics/GameAnalytics.framework"
     }
   },
   "platform_android": {

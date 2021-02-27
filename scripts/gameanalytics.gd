@@ -5,8 +5,6 @@ var _ga = null
 func _ready():
     if(Engine.has_singleton("GameAnalytics")):
         _ga = Engine.get_singleton("GameAnalytics")
-    elif OS.get_name() == 'iOS':
-        _ga = load("res://addons/gameanalytics-ios/gameanalytics.gdns").new()
     if ProjectSettings.has_setting('GameAnalytics/GAME_KEY') and ProjectSettings.has_setting('GameAnalytics/SECRET_KEY'):
         var gk = ProjectSettings.get_setting('GameAnalytics/GAME_KEY')
         var sk = ProjectSettings.get_setting('GameAnalytics/SECRET_KEY')
@@ -46,6 +44,7 @@ func init(game_key: String, secret_key: String, production: bool) -> void:
                 _ga.configureAvailableResourceItemTypes(types)
         _ga.configureAutoDetectAppVersion(true)
         _ga.init(game_key, secret_key)
+        print('GameAnalytics inited!')
 
 func addBusinessEvent(params: Dictionary) -> void:
     if _ga != null:
